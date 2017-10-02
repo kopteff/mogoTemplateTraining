@@ -5,7 +5,8 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-
+      navigation: ['about', 'service', 'work', 'blog', 'contact'],
+      navigationBar: ['intro', 'work', 'about', 'contacts']
   },
   getters: {
 
@@ -14,6 +15,6 @@ export const store = new Vuex.Store({
 
   },
   actions: {
-    
+
   }
 });
