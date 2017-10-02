@@ -27,7 +27,10 @@
       </main>
       <footer>
         <ul>
-          <li v-for="(val, key) in navigationBar"><span>{{ key | toNeededNumber }} </span> {{ val | toUpperCase }}<div class="scrollLine" v-if="isKey(key)"></div></li>
+          <li v-for="(val, key) in navigationBar">
+            <span>{{ key | toNeededNumber }} </span> {{ val | toUpperCase }}
+            <div class="scrollLine" v-if="isKey(key)"></div>
+          </li>
         </ul>
       </footer>
     </div>
