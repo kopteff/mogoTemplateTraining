@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <app-header></app-header>
+    <app-about-us></app-about-us>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from './components/Header.vue';
+import aboutUs from './components/aboutUs.vue';
 
 export default {
   components: {
-    'app-header': Header
+    'app-header': Header,
+    'app-about-us': aboutUs
   },
   name: 'app',
   data () {

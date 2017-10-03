@@ -4,3 +4,10 @@
   width: 1200px;
   margin: 0 auto;
 }
+
+@mixin separationLine {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60px;
+}
