@@ -2,8 +2,8 @@
   <div class="app-about-us">
     <section>
       <div class="wrapper">
-        <h2>{{ headings.what}}</h2>
-        <h1>{{ mainHeading | toUpperCase }}</h1>
+        <h3>{{ headings.what}}</h3>
+        <h2>{{ mainHeading | toUpperCase }}</h2>
         <p>{{ moreAbout }}</p>
         <ul>
           <li v-for="data in hoverText">
@@ -72,12 +72,12 @@ export default {
     .wrapper {
       @include wrapper;
 
-      h2 {
+      h3 {
         @include KaushanScript;
         font-size: 1.5rem;
         margin-bottom: 20px;
       }
-      h1 {
+      h2 {
         @include Montserrat;
         font-size: 1.875rem;
 
