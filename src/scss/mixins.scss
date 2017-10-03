@@ -5,6 +5,7 @@
   margin: 0 auto;
 }
 
+// Reusabale in most components separation line
 @mixin separationLine {
   content: "";
   display: block;
