@@ -73,18 +73,17 @@ export default {
       toNeededNumber(value) {
           return `0${value + 1}`;
       }
-    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-
 @import '../scss/variables.scss';
 @import '../scss/mixins.scss';
 @import '../scss/fonts.scss';
 
 .app-header {
-  background: url('../assets/images/bannerEagle2.png') no-repeat;
+  background: url('../assets/images/bannerEagle.png') no-repeat;
 
   .wrapper {
     @include wrapper;
@@ -96,7 +95,7 @@ export default {
       h1 {
         @include Montserrat;
         font-size: 1.875rem;
-        color: $headerColor;
+        color: $textWhite;
         margin: 25px 10px 10px;
       }
 
@@ -112,7 +111,7 @@ export default {
             display: inline-block;
             margin-right: 5%;
             @include Montserrat;
-            font-size: 0.875rem;
+            font-size: .875rem;
             line-height: 2.75rem;
             cursor: pointer;
 
@@ -158,11 +157,8 @@ export default {
         &:last-of-type {
 
           &::after {
-            content: "";
-            display: block;
-            height: 3px;
-            width: 60px;
-            background-color: $headerColor;
+            @include separationLine;
+            background-color: $bgWhite;
             position: absolute;
             left: 47.5%;
             top: 140%;
@@ -173,7 +169,7 @@ export default {
         margin: 130px auto 127px;
         height: 40px;
         width: 160px;
-        border: 3px solid $headerColor;
+        border: 3px solid $borderWhite;
         color: #fff;
         background-color: transparent;
         text-align: center;
@@ -201,7 +197,7 @@ export default {
           width: (100% / 4) - 2%;
           margin-bottom: 25px;
           margin-right: 2%;
-          color: $headerColor;
+          color: $textWhite;
           font-size: 1rem;
           @include Montserrat;
           position: relative;
@@ -216,7 +212,7 @@ export default {
             display: block;
             height: 3px;
             width: 100%;
-            background-color: $headerColor;
+            background-color: $bgWhite;
           }
           .scrollLine {
             display: block;
