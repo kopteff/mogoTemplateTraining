@@ -5,8 +5,8 @@
       <h2>{{ mainHeading | toUpperCase }}</h2>
       <ul>
         <li v-for="service in services">
-          <img :src="service.imagePath" :alt="service.name" />
-          <h4>{{ service.name | toUpperCase}}</h4>
+          <img :src="service.path" :alt="service.name" />
+          <h4>{{ service.name | toUpperCase }}</h4>
           <p> {{ service.description }}</p>
         </li>
       </ul>
@@ -20,17 +20,17 @@ export default {
         return {
           mainHeading: 'amazing services',
           services: [{name: 'photography', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' +
-                            ' Aenean commodo ligula eget dolor. Aenean massa. ', imagePath: '/dist/alarm.png'},
+                            ' Aenean commodo ligula eget dolor. Aenean massa.', path: '../assets/images/alarm.png'},
                      {name: 'web design', description: 'Cum sociis natoque penatibus et magnis dis parturient montes, ' +
-                            ' nascetur ridiculus mus. ', imagePath: '/dist/lineGraph.png'},
+                            ' nascetur ridiculus mus. ', path: '../assets/images/lineGraph.png'},
                      {name: 'creativity', description: 'Donec quam felis, ultricies nec, pellentesque eu, ' +
-                            ' pretium quis, sem. ', imagePath: '/dist/compOk.png'},
+                            ' pretium quis, sem. ', path: '../assets/images/compOK.png'},
                      {name: 'SEO', description: 'Nulla consequat massa quis enim. Donec pede justo, ' +
-                            ' fringilla vel, aliquet nec, vulputate eget, arcu.', imagePath: '/dist/book.png'},
+                            ' fringilla vel, aliquet nec, vulputate eget, arcu.', path: '../assets/images/book.png'},
                      {name: 'CSS/HTML', description: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.',
-                            imagePath: '/dist/home.png'},
+                            path: '../assets/images/home.png'},
                      {name: 'digital', description: 'Nullam dictum felis eu pede mollis pretium. Integer tincidunt.',
-                            imagePath: '/dist/imageQ.png'}]
+                            path: '../assets/images/imageQ.png'}]
         }
     },
     computed: {

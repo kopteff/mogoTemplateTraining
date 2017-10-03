@@ -91,6 +91,7 @@ export default {
         @include Roboto;
         font-size: .9375rem;
         margin: 0 130px 100px;
+        color: $textGray;
       }
       ul {
         margin: 0;
