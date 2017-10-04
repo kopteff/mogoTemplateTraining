@@ -12,3 +12,20 @@
   height: 3px;
   width: 60px;
 }
+
+@mixin customScrollBar {
+  &::-webkit-scrollbar-track {
+  	border-radius: 5px;
+  	background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar {
+  	width: 5px;
+  	background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+  	border-radius: 10px;
+  	background-color: #95e1d3;
+  }
+}
