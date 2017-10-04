@@ -29,6 +29,8 @@
 </template>
 
 <script>
+import imgUsers from '../assets/images/users.png';
+
 export default {
     data () {
         return {
@@ -38,9 +40,9 @@ export default {
           indicators: [{name: 'web design projects', indicator: 42}, {name: 'happy client', indicator: 123},
                        {name: 'award winner', indicator: 15}, {name: 'cup of coffee', indicator: 99},
                        {name: 'members', indicator: 24}],
-          hoverText: [{text: 'super team', path: '/dist/users.png'},
-                      {text: 'lorem ipsum', path: '/dist/users.png'},
-                      {text: 'lorem ipsum', path: '/dist/users.png'}]
+          hoverText: [{text: 'super team', path: imgUsers},
+                      {text: 'lorem ipsum', path: imgUsers},
+                      {text: 'lorem ipsum', path: imgUsers}]
         }
     },
     computed: {

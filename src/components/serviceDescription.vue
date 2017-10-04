@@ -10,7 +10,7 @@
           <ul>
             <li v-for="service in services">
               <div>
-                <img :src="service.path" alt="" />
+                <img :src="service.path" :alt="service.name" />
                 <h4>{{ service.name | toUpperCase }}</h4>
                 <span v-on:click.target="makeActive"></span>
               </div>
@@ -26,6 +26,10 @@
 </template>
 
 <script>
+import picture from '../assets/images/picture.png';
+import equalizer from '../assets/images/equalizer.png';
+import bullsEye from '../assets/images/bullsEye.png';
+
 export default {
   data () {
     return {
@@ -36,15 +40,15 @@ export default {
                   'Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. ' +
                   'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. '+
                   'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. '+
-                  'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: '../assets/images/picture.png'},
+                  'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: picture},
                  {name: 'creativity', description: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.' +
                         'Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. ' +
                         'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. '+
-                        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: '../assets/images/equalizer.png'},
+                        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: equalizer},
                  {name: 'web design', description: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.' +
                         'Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. ' +
                         'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. '+
-                        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: '../assets/images/bullsEye.png'}],
+                        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.', path: bullsEye}],
       active: 1
 
     }
@@ -126,10 +130,10 @@ export default {
 
       img {
         margin-right: 30px;
-        width: 50%;
       }
       section {
         width: 50%;
+        max-height: 380px;
 
         ul {
           margin: 0;
@@ -144,8 +148,9 @@ export default {
               height: 45px;
 
               img {
-                display: inline-block;
+                display: block;
                 float: left;
+                margin-top: 8px;
               }
               h4 {
                 display: inline-block;

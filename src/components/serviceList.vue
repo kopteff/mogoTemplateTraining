@@ -15,22 +15,29 @@
 </template>
 
 <script>
+import imgAlarm from '../assets/images/alarm.png';
+import imgLineGraph from '../assets/images/lineGraph.png';
+import imgCompOK from '../assets/images/compOK.png';
+import imgBook from '../assets/images/book.png';
+import imgHome from '../assets/images/home.png';
+import imgQ from '../assets/images/imageQ.png';
+
 export default {
     data () {
         return {
           mainHeading: 'amazing services',
           services: [{name: 'photography', description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.' +
-                            ' Aenean commodo ligula eget dolor. Aenean massa.', path: '../assets/images/alarm.png'},
+                            ' Aenean commodo ligula eget dolor. Aenean massa.', path: imgAlarm},
                      {name: 'web design', description: 'Cum sociis natoque penatibus et magnis dis parturient montes, ' +
-                            ' nascetur ridiculus mus. ', path: '../assets/images/lineGraph.png'},
+                            ' nascetur ridiculus mus. ', path: imgLineGraph},
                      {name: 'creativity', description: 'Donec quam felis, ultricies nec, pellentesque eu, ' +
-                            ' pretium quis, sem. ', path: '../assets/images/compOK.png'},
+                            ' pretium quis, sem. ', path: imgCompOK},
                      {name: 'SEO', description: 'Nulla consequat massa quis enim. Donec pede justo, ' +
-                            ' fringilla vel, aliquet nec, vulputate eget, arcu.', path: '../assets/images/book.png'},
+                            ' fringilla vel, aliquet nec, vulputate eget, arcu.', path: imgBook},
                      {name: 'CSS/HTML', description: 'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.',
-                            path: '../assets/images/home.png'},
+                            path: imgHome},
                      {name: 'digital', description: 'Nullam dictum felis eu pede mollis pretium. Integer tincidunt.',
-                            path: '../assets/images/imageQ.png'}]
+                            path: imgQ}]
         }
     },
     computed: {
