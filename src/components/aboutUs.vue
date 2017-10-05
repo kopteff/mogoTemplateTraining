@@ -115,14 +115,11 @@ export default {
             margin-right: 0;
           }
           &:hover {
-            transition-property: all;
-            transition-duration: .7s;
-            box-shadow: 10px 10px 0 0 $bgTurquoise;
-            transform: translate(-10px, -10px);
+            @include imgTranslation;
 
             .bg-gradient {
               visibility: visible;
-              background: linear-gradient(to top, $gradientBottom 0%, $gradientTop 100%);
+              @include imgHoverGradient;
             }
           }
           .bg-gradient {
