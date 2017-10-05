@@ -29,3 +29,25 @@
   	background-color: #95e1d3;
   }
 }
+
+//arrow
+@mixin arrow {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border: 3px solid $borderTurquoise;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+//gradient
+@mixin imgHoverGradient {
+  background: linear-gradient(to top, $gradientBottom 0%, $gradientTop 100%);
+}
+@mixin imgTranslation {
+  transition-property: all;
+  transition-duration: .7s;
+  box-shadow: 10px 10px 0 0 $bgTurquoise;
+  transform: translate(-10px, -10px);
+}

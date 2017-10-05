@@ -5,6 +5,7 @@
     <app-service-list></app-service-list>
     <app-design-template></app-design-template>
     <app-service-description></app-service-description>
+    <app-team></app-team>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import aboutUs from './components/aboutUs.vue';
 import serviceList from './components/serviceList.vue';
 import designTemplate from './components/designTemplate.vue';
 import serviceDescription from './components/serviceDescription.vue';
+import Team from './components/Team.vue';
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     'app-about-us': aboutUs,
     'app-service-list': serviceList,
     'app-design-template': designTemplate,
-    'app-service-description': serviceDescription
+    'app-service-description': serviceDescription,
+    'app-team': Team
   },
   name: 'app',
   data () {
