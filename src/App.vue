@@ -6,6 +6,7 @@
     <app-design-template></app-design-template>
     <app-service-description></app-service-description>
     <app-team></app-team>
+    <app-samples></app-samples>
   </div>
 </template>
 
@@ -16,6 +17,8 @@ import serviceList from './components/serviceList.vue';
 import designTemplate from './components/designTemplate.vue';
 import serviceDescription from './components/serviceDescription.vue';
 import Team from './components/Team.vue';
+import workSamples from './components/workSamples.vue';
+
 
 export default {
   components: {
@@ -24,7 +27,8 @@ export default {
     'app-service-list': serviceList,
     'app-design-template': designTemplate,
     'app-service-description': serviceDescription,
-    'app-team': Team
+    'app-team': Team,
+    'app-samples': workSamples
   },
   name: 'app',
   data () {

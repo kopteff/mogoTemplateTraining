@@ -177,10 +177,8 @@ export default {
 
         &:hover,
         &:active {
-          border: 3px solid $headerHoverColor;
-          color: $headerHoverColor;
-          text-shadow: 1px 1px 2px black;
-          box-shadow: 0px 1px 2px darken($headerHoverColor, 30deg);
+          border: 3px solid $borderRed;
+          color: $textRed;
         }
       }
     }

@@ -226,7 +226,7 @@ export default {
               align-items: center;
 
               button {
-                padding: 14px;
+                padding: 24px;
                 background-color: $bgYellow;
                 background-image: url('../assets/images/facebook3.png');
                 background-repeat: no-repeat;
