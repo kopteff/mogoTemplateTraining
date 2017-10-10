@@ -8,6 +8,7 @@
     <app-team></app-team>
     <app-samples></app-samples>
     <app-clients></app-clients>
+    <app-blog></app-blog>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import serviceDescription from './components/serviceDescription.vue';
 import Team from './components/Team.vue';
 import workSamples from './components/workSamples.vue';
 import clients from './components/clients.vue';
+import blog from './components/blog.vue';
 
 
 export default {
@@ -31,7 +33,8 @@ export default {
     'app-service-description': serviceDescription,
     'app-team': Team,
     'app-samples': workSamples,
-    'app-clients': clients
+    'app-clients': clients,
+    'app-blog': blog
   },
   name: 'app',
   data () {
