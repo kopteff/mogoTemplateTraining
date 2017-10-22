@@ -9,6 +9,7 @@
     <app-samples></app-samples>
     <app-clients></app-clients>
     <app-blog></app-blog>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import Team from './components/Team.vue';
 import workSamples from './components/workSamples.vue';
 import clients from './components/clients.vue';
 import blog from './components/blog.vue';
+import footer from './components/footer.vue';
 
 
 export default {
@@ -34,7 +36,8 @@ export default {
     'app-team': Team,
     'app-samples': workSamples,
     'app-clients': clients,
-    'app-blog': blog
+    'app-blog': blog,
+    'app-footer': footer
   },
   name: 'app',
   data () {
